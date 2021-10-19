@@ -1,0 +1,30 @@
+{
+  "name": "cleancode01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.2.1"
+  },
+  "scripts": {
+    "tsc:init": "tsc --init",
+    "build": "tsc",
+    "test": "tsc && jest ./dist/",
+    "coverage": "tsc && jest ./dist/ --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andremoreirafocus/cleancode01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andremoreirafocus/cleancode01/issues"
+  },
+  "homepage": "https://github.com/andremoreirafocus/cleancode01#readme"
+}
