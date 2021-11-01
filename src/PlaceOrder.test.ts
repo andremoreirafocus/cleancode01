@@ -1,5 +1,5 @@
-import Item from "./Item";
-import Order from "./Order";
+import ItemRepositoryMemory from "./ItemRepositoryMemory";
+import OrderRepositoryMemory from "./OrderRepositoryMemory";
 import PlaceOrder from "./PlaceOrder";
 
 test("Deve colocar umn pedido", () => {
@@ -20,7 +20,7 @@ test("Deve colocar umn pedido", () => {
       },
     ]
   };
-  const placeOrder = new PlaceOrder();
+  const placeOrder = new PlaceOrder(new ItemRepositoryMemory, new OrderRepositoryMemory);
   const output = placeOrder.execute(input);
   expect(output.total).toBe(6090);
 });
